@@ -75,8 +75,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: deploy
     steps:
-      - name: Output information
-        run: ${{ needs.deploy.outputs.result }}
+      - name: Print Deploy Output Information
+        run: echo ${{ needs.deploy.outputs.result }}
     #secrets:
     #  some-secret: ${{ secrets.some-secret }}
   report:
